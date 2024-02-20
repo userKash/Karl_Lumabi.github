@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Form Activity</title>
+</head>
+<style>
+    * {
+        font-family: Oswald;
+    }
+    .textfields{
+        width: 95%;
+    }
+    .flex-container{
+        background-color: white;
+        height: 650px; 
+        width: 300px; 
+        border-radius: 10px;
+    }
+    input[type="password"]{
+        display: flex;
+    }
+
+    .Submit{
+        background-color: green;
+        width: 100px;
+    }
+    .Reset{
+        background-color: red; 
+        width: 100px;
+    }
+    h1{
+        padding-top: 25px;
+        text-align: center;
+    }
+
+    
+</style>
+
+<body style="background-color: rgb(54, 50, 50);">
+    <center>
+        <div class="flex-container">
+            <h1><b>Registration Form</b></h1>
+            <form style="padding: 10px;" align="left" >
+                First name: <br> <input type="text" class="textfields" name= "firstname"  /><br>
+                Last name: <br> <input type= "text" class="textfields" name= "lastname" /><br>
+                Nickname: <br> <input type= "text" class="textfields" name= "nickname" /><br>
+                Email: <br> <input type= "text" class="textfields" name= "email" /><br>
+                Password: <br> <input type= "password" class="textfields" name= "password" /><br>
+                Date of Birth: <br> <input type= "date" class="textfields" name= "dateOfBirth" /><br>
+                Gender:
+                <form action="Gender">
+                    <br>
+                        <input type="radio" name="gender" value="male" checked> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="other"> Other
+                    </br>
+                    Mobile: <br> <input type= "text" class="textfields" name= "mobile" /><br>
+                    Address: <br> <textarea class="textfields" name= "address" cols = "30" rows="10"></textarea><br>
+                </form>
+                <button class="Submit">Submit</button>
+                <button class="Reset">Reset</button>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
